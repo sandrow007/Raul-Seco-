@@ -282,12 +282,6 @@
   </div>
 </section>
 
-<footer>
-  <div class="fmark">Raúl Seco</div>
-  <div class="fmeta">Sevilla, España — © 2026</div>
-</footer>
-
-<div class="demo-flag">Vista previa — no versión final</div>
 <footer style="text-align: center; color: var(--piedra); font-family: 'Space Mono', monospace; font-size: 11px; padding: 40px 20px; background-color: var(--noir);">
   <p>© 2026 Raúl Seco — Todos los derechos reservados</p>
   <nav style="margin-top: 10px;">
@@ -297,7 +291,7 @@
   </nav>
 </footer>
 
-<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #1a1a1a; color: #ede8df; padding: 20px; text-align: center; border-top: 2px solid #b08d57; z-index: 9999;">
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0c0c0c; color: #ede8df; padding: 20px; text-align: center; border-top: 2px solid #b08d57; z-index: 9999;">
   <p style="margin-bottom: 15px; font-size: 14px;">Utilizamos cookies para mejorar la experiencia. ¿Aceptas su uso?</p>
   <div>
     <button id="btn-accept" style="background: #b08d57; color: #000; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; margin: 0 5px;">Aceptar</button>
@@ -306,8 +300,8 @@
 </div>
 
 <script>
+  // Script para ocultar el banner al hacer clic
   const banner = document.getElementById('cookie-banner');
-  // Lógica para ocultar el banner al hacer clic
   document.getElementById('btn-accept').addEventListener('click', () => { banner.style.display = 'none'; });
   document.getElementById('btn-reject').addEventListener('click', () => { banner.style.display = 'none'; });
 </script>
